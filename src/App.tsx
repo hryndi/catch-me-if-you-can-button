@@ -1,10 +1,7 @@
 import { useEffect, useRef } from "react";
 import useMousePosition from "./useMousePosition";
 import useButtonProperties from "./useButtonProperties";
-interface ButtonPropertiesElements {
-  buttonCenterWidth: number | null;
-  buttonCenterHeight: number | null;
-}
+
 function App() {
   const buttonRef = useRef<HTMLButtonElement | null>(null);
   const ButtonProps = useButtonProperties(buttonRef);
